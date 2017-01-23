@@ -19,4 +19,11 @@ RSpec.describe Robot, type: :model do
       expect(FactoryGirl.create(:robot)).to be_valid
     end
   end
+
+  describe "Actions" do
+    it { is_expected.to respond_to :name }
+    it { is_expected.to respond_to :type }
+    it { is_expected.to respond_to :armor }
+    it { is_expected.to respond_to :jetpack }
+  end
 end
