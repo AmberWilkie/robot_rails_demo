@@ -1,0 +1,47 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/philipzudemberg/Documents/CraftAcademy_Projects/robot_rails_demo/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/philipzudemberg/Documents/CraftAcademy_Projects/robot_rails_demo/app/models/robot.rb": [
+        1,
+        null
+      ],
+      "/Users/philipzudemberg/Documents/CraftAcademy_Projects/robot_rails_demo/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/philipzudemberg/Documents/CraftAcademy_Projects/robot_rails_demo/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/philipzudemberg/Documents/CraftAcademy_Projects/robot_rails_demo/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/philipzudemberg/Documents/CraftAcademy_Projects/robot_rails_demo/app/controllers/application_controller.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/philipzudemberg/Documents/CraftAcademy_Projects/robot_rails_demo/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/Users/philipzudemberg/Documents/CraftAcademy_Projects/robot_rails_demo/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1485185986
+  }
+}
