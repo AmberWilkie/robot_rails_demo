@@ -4,6 +4,6 @@ FactoryGirl.define do
     robot_type "Fighting"
     armor "Gold Plated"
     jetpack false
-    owner FactoryGirl.create(:owner)
+    owner
   end
 end
