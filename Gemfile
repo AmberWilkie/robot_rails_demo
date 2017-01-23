@@ -27,6 +27,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'travis', '~> 1.8', '>= 1.8.2'
   gem 'coveralls', require: false
+  gem 'faker'
 end
 
 group :development do

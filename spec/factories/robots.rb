@@ -1,8 +1,9 @@
 FactoryGirl.define do
   factory :robot do
     name "Robocop"
-    type "Fighting"
+    robot_type "Fighting"
     armor "Gold Plated"
     jetpack false
+    owner FactoryGirl.create(:owner)
   end
 end
