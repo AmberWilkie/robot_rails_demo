@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'travis', '~> 1.8', '>= 1.8.2'
 
 group :development, :test do
   gem 'byebug', platform: :mri
