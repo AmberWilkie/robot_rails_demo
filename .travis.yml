@@ -1,0 +1,19 @@
+language: ruby
+cache: bundler
+rvm:
+  - 2.3.0
+before_script:
+- bundle exec rails db:create --all
+- bundle exec rails db:migrate
+services:
+- postgresql
+deploy:
+  provider: heroku
+  api_key:
+    secure: TurGRV0X3wqVD/kL1EQJlcGnM4+uFzWLWys/rP0QWepFqteOdsu93T09ZfxVkfiRl7Uvqkha09xzyY4YCkDviUClJKGaP+z0ylibq9LA693odws2ff8Ba4zQ5ngsBWYPlQ9VhlD5I/3tvvoeAYLo0w4WTWZ7MvC4+usS/nyc8/Y7LR+8w8zsW3tlbttqqw/UqZA/YUMR9t0Q3tjSfCMG8P+2ET0JGdsBdHUgkdUC0YD8QOgyntx+IuRf0iTnN0ODdmIAklEh1T4Wru3yJfqEegXSgVs1Wb78wgQM7PVeFzmLDPmWBepkDj7PZGqQQApo8jH9HmGmV3+qm/GSZLfZT3bwDYQTDRZgL9xoGpmJR911NSSGKx8TBZR0Gkg06sBgh5rCU8rZqemhmJGMW767ddeSSLT0guqtcemnB1ymCZKAxm1SH5S/0Wv4yR9nW0ekHlH66RgH68/1F28lpm5n2K6BEFMMP8cPpWOGCP4O1QsTRQ1OuyxgX07DY7ZfH9+KVGKI09J1fJeSMTfBAj1v7qZWIpbxeB9Z9JleZbUIxXZKVSnHuV8NOs+4EPZpc/Y/MkpFzvWpjJible78mxjM3RtUh4NK7pGGbFKSdTILOxab4C4RwflybUkm/TO2wKQqxZbtkBta8u6B2tg7Lbk8ai9FlqpHeBRYC8kamR3DId8=
+  app:
+    develop: robot-rails-demo
+  on:
+    repo: Philippoes/robot_rails_demo
+  run:
+  - bundle exec rails db:migrate
