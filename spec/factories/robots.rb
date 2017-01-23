@@ -1,8 +1,8 @@
 FactoryGirl.define do
   factory :robot do
-    name "MyString"
-    type ""
-    armor "MyString"
+    name "Robocop"
+    type "Fighting"
+    armor "Gold Plated"
     jetpack false
   end
 end
